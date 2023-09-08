@@ -1,10 +1,7 @@
-import React, { Suspense, lazy } from 'react'
+import React, { Suspense } from 'react'
 import { Routes as Switch, Route, BrowserRouter } from 'react-router-dom';
-const Home = lazy(() => import('../pages/Home'));
-const About = lazy(() => import('../Pages/About'));
 import Loader from "../assets/Loader";
-import Contact from '../pages/Contact';
-import Projects from '../pages/Projects';
+import { Home,About,Contact,Projects } from "../assets";
 const Router = () => {
   return (
     <BrowserRouter>
