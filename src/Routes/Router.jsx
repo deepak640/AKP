@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react'
-import { Routes as Switch, Route, Navigate, BrowserRouter } from 'react-router-dom';
-const Home = lazy(() => import('../Pages/Home'));
+import { Routes as Switch, Route, BrowserRouter } from 'react-router-dom';
+const Home = lazy(() => import('../pages/Home'));
 const About = lazy(() => import('../Pages/About'));
 import Loader from "../assets/Loader";
 import Contact from '../pages/Contact';
@@ -8,7 +8,7 @@ import Projects from '../pages/Projects';
 const Router = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<Loader/>}>
+      <Suspense fallback={<Loader />}>
         <Switch>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
