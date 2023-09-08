@@ -5,7 +5,7 @@ import AOS from 'aos';
 import React, { Suspense } from 'react'
 import { Routes as Switch, Route, BrowserRouter } from 'react-router-dom';
 import Loader from "./assets/Loader";
-import { Home, About, Contact, Projects } from "./assets";
+import { Home, About, Contact, Projects } from "./assets/Index.jsx";
 
 import 'aos/dist/aos.css';
 function App() {
