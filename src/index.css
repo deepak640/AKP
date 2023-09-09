@@ -1,4 +1,12 @@
-.active::after{
+.active::after {
     width: 100%;
 }
 
+.PhoneInputInput {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0.2rem 0.6rem;
+    font-size: 1.1rem;
+    transition: .3s;
+}
