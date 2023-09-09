@@ -17,16 +17,15 @@ const Contact = () => {
                     <div className="left"></div>
                     <div className="right">
                         <h2>Contact Us</h2>
-                        <input type="text" name='name' className="field" id="" placeholder='Enter Name' required />
-                        <input type="email" name='email' className="field" id="" placeholder='Enter Email' required />
-                        {/* <input type="Phone Number" name='phone number' className="field" id="" placeholder='Enter Phone number' required /> */}
+                        <input type="text" name='name' className="field" id="" placeholder='Enter Name' required autoComplete='off' />
+                        <input type="email" name='email' className="field" id="" placeholder='Enter Email' required autoComplete='off' />
                         <PhoneInput className='field'
                             placeholder="Enter phone number"
                             defaultCountry='IN'
                             name='phone number'
                             value={value}
-                            onChange={setValue} />
-                        <textarea className="field area" name='message' id="" cols='20' placeholder='message' required></textarea>
+                            onChange={setValue} required autoComplete='off' />
+                        <textarea className="field area" name='message' id="" cols='20' placeholder='message' required autoComplete='off'></textarea>
                         <button className='btn'>SUBMIT</button>
                     </div>
                 </form>
