@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-// import Router from "./Routes/Router";
 import AOS from 'aos';
 import React, { Suspense } from 'react'
 import { Routes as Switch, Route, BrowserRouter } from 'react-router-dom';
@@ -30,7 +29,6 @@ function App() {
           </Switch>
         </Suspense>
       </BrowserRouter>
-      {/* <Router /> */}
     </>
   )
 }
