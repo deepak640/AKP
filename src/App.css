@@ -513,14 +513,24 @@ textarea {
 
 @media screen and (max-width: 880px) {
   .contact-box {
+    height: 90%;
+    width: min-content;
     grid-template-columns: 1fr;
+  }
+
+  .field {
+    width: 100%;
+    font-size: medium;
+    padding: 0.5rem;
   }
 
   .contact-container {
     height: 100%;
     padding: 10px;
   }
-
+  .right{
+    padding: 20px;
+  }
   .left {
     height: 200px;
   }
