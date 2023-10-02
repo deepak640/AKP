@@ -602,6 +602,10 @@ footer p:after {
     margin: 50px auto;
     text-align: justify;
   }
+  .hero-section div:nth-child(2) h1 {
+    text-align: center;
+    font-size: medium;
+  }
 
   .hero-section div:nth-child(2) {
     width: 100%;
@@ -680,7 +684,7 @@ footer p:after {
 
   .list li {
     display: block;
-    background-color: rgba(229, 223, 223);
+    background-color:var(--background-color);
   }
 
   .list li a {
@@ -701,7 +705,7 @@ footer p:after {
 @media (max-width:390px) {
   .hero-section div:nth-child(2) h1 {
     font-size: 1.2rem;
-    width: 100%;
+    text-align: center;
   }
 
   .hero-section div:nth-child(2) {
@@ -709,9 +713,6 @@ footer p:after {
     margin-top: 50px;
   }
 
-  .hero-content {
-    width: auto;
-  }
 
   .skills h1 {
     margin: 20px auto;
