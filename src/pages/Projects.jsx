@@ -4,6 +4,7 @@ import p1 from "./images/banner1.png";
 import p2 from "./images/banner2.png";
 import p3 from "./images/banner3.png";
 import p4 from "./images/banner4.png";
+import p5 from "./images/banner5.png";
 const Projects = () => {
   return (
       <Layout>
@@ -15,7 +16,7 @@ const Projects = () => {
               </div>
           </section>
           <section class="project-section">
-              <div class="projects">
+              <div class="projects" data-aos="zoom-in">
                   <div class="project-image">
                       <img src={p1} alt="Project Title"/>
                   </div>
@@ -27,7 +28,7 @@ const Projects = () => {
                       <a target="_blank" href="https://mashoor-todo.onrender.com/" class="button">View Project</a>
                   </div>
               </div>
-              <div class="projects">
+              <div class="projects" data-aos="zoom-in">
                   <div class="project-image">
                       <img src={p2} alt="Project Title"/>
                   </div>
@@ -36,10 +37,10 @@ const Projects = () => {
                       <p>The website usually has a header that contains the university logo, navigation menu, and possibly
                           some important
                           announcements.</p>
-                      <a target="_blank" href="https://mashoornegi.github.io/Project/" class="button">View Project</a>
+                      <a target="_blank" href="https://deepak640.github.io/Project/" class="button">View Project</a>
                   </div>
               </div>
-              <div class="projects">
+              <div class="projects" data-aos="zoom-in">
                   <div class="project-image">
                       <img src={p3} alt="Project Title"/>
                   </div>
@@ -50,7 +51,17 @@ const Projects = () => {
                       <a target="_blank" href="https://love-to-music.netlify.app/" class="button">View Project</a>
                   </div>
               </div>
-              <div class="projects">
+              <div class="projects" data-aos="zoom-in">
+                  <div class="project-image">
+                      <img src={p5} alt="Project Title"/>
+                  </div>
+                  <div class="project-details">
+                      <h2>Schedulehub</h2>
+                      <p>schedulehub is a website that will make college schedules easy with their built in feature and all algorithms that will be used to make a timetable without any clashes</p>
+                      <a target="_blank" href="https://schedulehub.netlify.app/" class="button">View Project</a>
+                  </div>
+              </div>
+              <div class="projects" data-aos="zoom-in">
                   <div class="project-image">
                       <img src={p4} alt="Project Title"/>
                   </div>
