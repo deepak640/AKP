@@ -5,6 +5,7 @@ import p2 from "./images/banner2.png";
 import p3 from "./images/banner3.png";
 import p4 from "./images/banner4.png";
 import p5 from "./images/banner5.png";
+import p6 from "./images/banner6.jpg";
 const Projects = () => {
   return (
       <Layout>
@@ -69,6 +70,16 @@ const Projects = () => {
                       <h2>Youtube Clone</h2>
                       <p>creative my personal youtube clone learned during internship can comment easy login with otp feature</p>
                       <a target="_blank" href="https://akyoutube.vercel.app/" class="button">View Project</a>
+                  </div>
+              </div>
+              <div class="projects" data-aos="zoom-in">
+                  <div class="project-image">
+                      <img src={p6} alt="Project Title"/>
+                  </div>
+                  <div class="project-details">
+                      <h2>Quiz Shazam</h2>
+                      <p>Quiz web app with categorized quizzes and with a seamless and interactive UI design</p>
+                      <a target="_blank" href="https://github.com/deepak640/quizShazam" class="button">View Project</a>
                   </div>
               </div>
           </section>

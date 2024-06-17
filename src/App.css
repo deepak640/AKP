@@ -8,11 +8,16 @@
 hr.hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 :root {
-  --background-color: #B8F1B0;
+  --background-color: #b8f1b0;
   --text-color: black;
   --background-color-dark: #222;
   --text-color-dark: #eee;
@@ -67,7 +72,6 @@ p {
   color: black;
   background-color: #389db7d1;
 }
-
 
 /* navbar ---------------------------------------- */
 nav {
@@ -124,7 +128,6 @@ nav ul li a:hover::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .hero-section div {
@@ -230,7 +233,7 @@ nav ul li a:hover::after {
 }
 
 .accordion label:hover,
-.accordion input:checked+label {
+.accordion input:checked + label {
   color: black;
 }
 
@@ -242,11 +245,11 @@ nav ul li a:hover::after {
   display: none;
 }
 
-.accordion input:checked+label .close {
+.accordion input:checked + label .close {
   display: block;
 }
 
-.accordion input:checked+label .open {
+.accordion input:checked + label .open {
   display: none;
 }
 
@@ -266,11 +269,11 @@ nav ul li a:hover::after {
   transition: transform 0.15s, opacity 0.75s;
 }
 
-.accordion input:checked~.accordion-body {
+.accordion input:checked ~ .accordion-body {
   height: max-content;
 }
 
-.accordion input:checked~.accordion-body .accordion-answer {
+.accordion input:checked ~ .accordion-body .accordion-answer {
   opacity: 1;
   transform: scale(1);
 }
@@ -308,19 +311,17 @@ nav ul li a:hover::after {
 .project-section {
   width: 90%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .projects {
-  height: max-content;
   width: 100%;
   margin-right: 2px;
   max-width: 300px;
   margin-bottom: 30px;
   padding: 20px;
-  background-color: #E3FCBF;
+  background-color: #e3fcbf;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
@@ -338,19 +339,19 @@ nav ul li a:hover::after {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-
-.project-details h2 {
-  width: max-content;
-  font-size: 24px;
-  margin: auto;
-  margin-bottom: 10px;
+.project-details{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 250px;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project-details p {
-  text-align: justify;
-  margin-bottom: 20px;
+  margin: 0;
+  width: 100%;
 }
-
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -358,7 +359,6 @@ nav ul li a:hover::after {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  margin-right: 10px;
 }
 
 .button.secondary {
@@ -410,7 +410,7 @@ nav ul li a:hover::after {
 }
 
 .contact-container:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -426,8 +426,8 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #E3FCBF;
-  border: solid 5px #E3FCBF;
+  background-color: #e3fcbf;
+  border: solid 5px #e3fcbf;
   box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
 }
 
@@ -448,7 +448,7 @@ h2 {
 }
 
 h2:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -456,7 +456,7 @@ h2:after {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: #B8F1B0;
+  background-color: #b8f1b0;
 }
 
 .field {
@@ -467,7 +467,7 @@ h2:after {
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   margin-bottom: 22px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .field:hover {
@@ -482,16 +482,16 @@ textarea {
   width: 100%;
   padding: 0.5rem 1rem;
   color: #fff;
-  background-color: #14C38E;
+  background-color: #14c38e;
   font-size: 1.1rem;
   border: none;
   outline: none;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #B8F1B0;
+  background-color: #b8f1b0;
 }
 
 .field:focus {
@@ -542,12 +542,12 @@ footer {
 .footer-icons a {
   display: block;
   margin-right: 30px;
-  color: #14C38E;
+  color: #14c38e;
   font-size: 18px;
 }
 
 .fa-twitter:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .fa-instagram:hover {
@@ -569,7 +569,7 @@ footer p {
 }
 
 footer p:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -577,18 +577,17 @@ footer p:after {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: #14C38E;
+  background-color: #14c38e;
 }
 
 /* responsive ------------------------------- */
-@media (max-width:1452px) {
+@media (max-width: 1452px) {
   .toggleWrapper {
     right: 35%;
   }
 }
 
 @media (max-width: 1000px) {
-
   p {
     text-align: justify;
   }
@@ -641,7 +640,7 @@ footer p:after {
   }
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .toggleWrapper {
     right: 5%;
     top: 43%;
@@ -684,7 +683,7 @@ footer p:after {
 
   .list li {
     display: block;
-    background-color:var(--background-color);
+    background-color: var(--background-color);
   }
 
   .list li a {
@@ -696,13 +695,12 @@ footer p:after {
     width: 0;
   }
 
-  #toggler:checked~.menu {
+  #toggler:checked ~ .menu {
     height: 450px;
   }
 }
 
-
-@media (max-width:390px) {
+@media (max-width: 390px) {
   .hero-section div:nth-child(2) h1 {
     font-size: 1.2rem;
     text-align: center;
@@ -713,13 +711,12 @@ footer p:after {
     margin-top: 50px;
   }
 
-
   .skills h1 {
     margin: 20px auto;
   }
 }
 
-@media (max-width:280px) {
+@media (max-width: 280px) {
   .footer-icons {
     display: flex;
   }
@@ -739,7 +736,7 @@ footer p:after {
 
 .loader:before,
 .loader:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -752,9 +749,9 @@ footer p:after {
 }
 
 .loader:after {
-  color: #FF3D00;
+  color: #ff3d00;
   transform: rotateY(70deg);
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 @keyframes rotate {
@@ -778,37 +775,36 @@ footer p:after {
 }
 
 @keyframes spin {
-
   0%,
   100% {
-    box-shadow: .2em 0px 0 0px currentcolor;
+    box-shadow: 0.2em 0px 0 0px currentcolor;
   }
 
   12% {
-    box-shadow: .2em .2em 0 0 currentcolor;
+    box-shadow: 0.2em 0.2em 0 0 currentcolor;
   }
 
   25% {
-    box-shadow: 0 .2em 0 0px currentcolor;
+    box-shadow: 0 0.2em 0 0px currentcolor;
   }
 
   37% {
-    box-shadow: -.2em .2em 0 0 currentcolor;
+    box-shadow: -0.2em 0.2em 0 0 currentcolor;
   }
 
   50% {
-    box-shadow: -.2em 0 0 0 currentcolor;
+    box-shadow: -0.2em 0 0 0 currentcolor;
   }
 
   62% {
-    box-shadow: -.2em -.2em 0 0 currentcolor;
+    box-shadow: -0.2em -0.2em 0 0 currentcolor;
   }
 
   75% {
-    box-shadow: 0px -.2em 0 0 currentcolor;
+    box-shadow: 0px -0.2em 0 0 currentcolor;
   }
 
   87% {
-    box-shadow: .2em -.2em 0 0 currentcolor;
+    box-shadow: 0.2em -0.2em 0 0 currentcolor;
   }
 }
